@@ -78,11 +78,11 @@ export default function Hero() {
   const activeStore = showrooms[activeIdx];
 
   return (
-    <section id="home" className="relative pt-28 md:pt-32 pb-16 overflow-hidden bg-slate-950 text-white selection:bg-blue-600 selection:text-white">
+    <section id="home" className="relative pt-28 md:pt-32 pb-16 overflow-hidden bg-gradient-to-b from-slate-50 via-white to-blue-50/20 text-slate-900 selection:bg-blue-600 selection:text-white border-b border-slate-200/60">
       
       {/* Subtle Radial Mesh Lighting Background */}
-      <div className="absolute top-1/4 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-600/10 rounded-full filter blur-[140px] pointer-events-none"></div>
-      <div className="absolute bottom-0 right-1/4 w-[450px] h-[450px] bg-cyan-500/10 rounded-full filter blur-[140px] pointer-events-none"></div>
+      <div className="absolute top-1/4 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-100/60 rounded-full filter blur-[140px] pointer-events-none"></div>
+      <div className="absolute bottom-0 right-1/4 w-[450px] h-[450px] bg-cyan-100/50 rounded-full filter blur-[140px] pointer-events-none"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
         
@@ -93,7 +93,7 @@ export default function Hero() {
           <div className="lg:col-span-7 flex flex-col items-start text-left">
             
             {/* Softened Top Pill Badge */}
-            <div className="inline-flex items-center gap-2.5 py-1.5 px-4 rounded-full bg-white/5 backdrop-blur-md border border-white/10 text-xs font-medium text-slate-300 mb-6 shadow-xs">
+            <div className="inline-flex items-center gap-2.5 py-1.5 px-4 rounded-full bg-white border border-slate-200/90 text-xs font-medium text-slate-700 mb-6 shadow-xs">
               <span className="relative flex h-2 w-2">
                 <span className={`animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 ${
                   isOpen ? 'bg-emerald-400' : 'bg-rose-400'
@@ -102,31 +102,31 @@ export default function Hero() {
                   isOpen ? 'bg-emerald-500' : 'bg-rose-500'
                 }`}></span>
               </span>
-              <span className="tracking-wide text-slate-300">
+              <span className="tracking-wide text-slate-700 font-semibold">
                 Official Daikin AC Hub • Mobiles • Electronics
               </span>
             </div>
 
             {/* Crisp Geometric Display Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.12] mb-6 text-white">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.12] mb-6 text-slate-950">
               Sangli District's <br />
-              <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(56,189,248,0.25)]">
+              <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-800 bg-clip-text text-transparent">
                 Premier Electronics & Daikin Hub
               </span>
             </h1>
 
             {/* Subtitle */}
-            <p className="text-base sm:text-lg text-slate-300 max-w-2xl mb-8 font-normal leading-relaxed">
-              Welcome to <strong className="font-semibold text-white">Sai Sales</strong>. Serving 25,000+ families with 100% genuine electronics, flagship smartphones, and certified Daikin Inverter AC distribution across 4 locations in Sangli District.
+            <p className="text-base sm:text-lg text-slate-600 max-w-2xl mb-8 font-normal leading-relaxed">
+              Welcome to <strong className="font-bold text-slate-900">Sai Sales</strong>. Serving 25,000+ families with 100% genuine electronics, flagship smartphones, and certified Daikin Inverter AC distribution across 4 locations in Sangli District.
             </p>
 
             {/* Unified Segmented Location Selector Tabs */}
             <div className="w-full max-w-xl mb-8">
-              <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 block mb-3">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500 block mb-3">
                 Featured Showroom Location:
               </span>
               
-              <div className="bg-slate-900/70 border border-white/10 p-1 sm:p-1.5 rounded-2xl grid grid-cols-4 gap-1 sm:gap-1.5 backdrop-blur-md shadow-inner">
+              <div className="bg-slate-100 border border-slate-200 p-1 sm:p-1.5 rounded-2xl grid grid-cols-4 gap-1 sm:gap-1.5 shadow-inner">
                 {showrooms.map((store, index) => {
                   const isSelected = activeIdx === index;
                   return (
@@ -140,8 +140,8 @@ export default function Hero() {
                       title={store.city}
                       className={`w-full py-2 px-1 sm:px-3.5 rounded-xl text-[11px] sm:text-xs font-semibold transition-all duration-200 text-center touch-manipulation select-none truncate ${
                         isSelected
-                          ? 'bg-blue-600 text-white font-bold shadow-md shadow-blue-600/30 ring-1 ring-blue-400/30'
-                          : 'text-slate-400 hover:text-white hover:bg-white/5'
+                          ? 'bg-blue-600 text-white font-bold shadow-md shadow-blue-600/25 ring-1 ring-blue-500'
+                          : 'text-slate-600 hover:text-slate-900 hover:bg-white/80'
                       }`}
                     >
                       {store.city}
@@ -155,7 +155,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-3.5 w-full sm:w-auto">
               <a
                 href="#stores"
-                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold py-3.5 px-8 rounded-xl shadow-lg shadow-blue-600/25 hover:shadow-blue-600/40 hover:-translate-y-0.5 transition-all text-sm"
+                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold py-3.5 px-8 rounded-xl shadow-lg shadow-blue-600/20 hover:shadow-blue-600/35 hover:-translate-y-0.5 transition-all text-sm"
               >
                 <span>📍 Explore 4 Showrooms</span>
                 <span>→</span>
@@ -163,7 +163,7 @@ export default function Hero() {
 
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 text-white font-semibold py-3.5 px-8 rounded-xl border border-white/15 backdrop-blur-md hover:-translate-y-0.5 transition-all text-sm"
+                className="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-800 font-bold py-3.5 px-8 rounded-xl border border-slate-200/90 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all text-sm"
               >
                 <span>🤝 Franchise Enquiry</span>
               </a>
@@ -175,10 +175,10 @@ export default function Hero() {
           <div className="lg:col-span-5 relative">
             
             {/* Radial Backdrop Glow */}
-            <div className="absolute -inset-4 bg-gradient-to-r from-blue-600/25 via-cyan-500/20 to-indigo-600/25 rounded-[3rem] blur-2xl opacity-70 pointer-events-none"></div>
+            <div className="absolute -inset-4 bg-gradient-to-r from-blue-400/20 via-cyan-400/15 to-indigo-400/20 rounded-[3rem] blur-2xl opacity-70 pointer-events-none"></div>
 
             {/* Storefront Image Container with Enhanced Glow & Depth */}
-            <div className="relative rounded-[2.2rem] overflow-hidden border border-white/15 bg-slate-900 shadow-[0_20px_50px_-10px_rgba(37,99,235,0.3)] aspect-[4/3] sm:aspect-[16/11] lg:aspect-[4/3] group">
+            <div className="relative rounded-[2.2rem] overflow-hidden border border-slate-200/90 bg-slate-100 shadow-[0_20px_50px_-10px_rgba(37,99,235,0.15)] aspect-[4/3] sm:aspect-[16/11] lg:aspect-[4/3] group">
               
               {/* Showroom Photos with Smooth Transition & Warmth Treatment */}
               {showrooms.map((store, index) => (
@@ -193,15 +193,15 @@ export default function Hero() {
                   <img
                     src={store.src}
                     alt={store.name}
-                    className="w-full h-full object-cover contrast-[1.06] brightness-[1.02] saturate-[1.05] group-hover:scale-105 transition-transform duration-700"
+                    className="w-full h-full object-cover contrast-[1.04] brightness-[1.01] saturate-[1.04] group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
                 </div>
               ))}
 
               {/* Floating Top Header Badges with Refined Backdrop Blur */}
               <div className="absolute top-4 left-4 right-4 flex items-center justify-between z-20">
-                <div className="flex items-center gap-1.5 backdrop-blur-md bg-black/45 border border-white/15 text-white text-xs font-bold px-3 py-1.5 rounded-xl shadow-lg">
+                <div className="flex items-center gap-1.5 backdrop-blur-md bg-black/55 border border-white/20 text-white text-xs font-bold px-3 py-1.5 rounded-xl shadow-lg">
                   <span className="relative flex h-2 w-2">
                     <span className={`animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 ${
                       isOpen ? 'bg-emerald-400' : 'bg-rose-400'
@@ -213,7 +213,7 @@ export default function Hero() {
                   <span>{activeStore.city}</span>
                 </div>
 
-                <div className="backdrop-blur-md bg-black/45 border border-white/15 text-white/90 text-[11px] font-semibold px-3 py-1.5 rounded-xl shadow-lg flex items-center gap-1">
+                <div className="backdrop-blur-md bg-black/55 border border-white/20 text-white text-[11px] font-semibold px-3 py-1.5 rounded-xl shadow-lg flex items-center gap-1">
                   <span className="text-amber-400">★</span>
                   <span>4.8 Google Rated</span>
                 </div>
@@ -225,16 +225,16 @@ export default function Hero() {
         </div>
 
         {/* 4 Feature Trust Pillars Bar */}
-        <div className="pt-8 border-t border-white/10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="pt-8 border-t border-slate-200/80 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {highlights.map((item, idx) => (
             <div
               key={idx}
-              className="bg-white/5 border border-white/10 rounded-2xl p-4 sm:p-5 backdrop-blur-md hover:bg-white/10 transition-colors flex items-start gap-3.5"
+              className="bg-white border border-slate-200/80 rounded-2xl p-4 sm:p-5 shadow-sm hover:shadow-md hover:border-blue-200 transition-all flex items-start gap-3.5"
             >
-              <span className="text-2xl p-2 bg-white/10 rounded-xl shrink-0">{item.icon}</span>
+              <span className="text-2xl p-2 bg-blue-50 text-blue-600 rounded-xl shrink-0 border border-blue-100">{item.icon}</span>
               <div>
-                <h4 className="text-sm font-bold text-white mb-0.5">{item.title}</h4>
-                <p className="text-xs text-slate-400 font-light">{item.desc}</p>
+                <h4 className="text-sm font-bold text-slate-900 mb-0.5">{item.title}</h4>
+                <p className="text-xs text-slate-500 font-normal leading-relaxed">{item.desc}</p>
               </div>
             </div>
           ))}

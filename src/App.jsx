@@ -26,7 +26,7 @@ function App() {
       <div className="fixed bottom-5 right-5 z-40">
         <a
           href="tel:8370818181"
-          className="flex items-center gap-2.5 bg-slate-900/90 hover:bg-blue-600 active:bg-blue-700 text-white font-bold py-3 px-4 sm:px-5 rounded-full shadow-2xl backdrop-blur-md border border-white/20 transition-all duration-300 hover:scale-105 group"
+          className="flex items-center gap-2.5 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-bold py-3 px-4 sm:px-5 rounded-full shadow-2xl shadow-blue-600/30 backdrop-blur-md border border-blue-400/30 transition-all duration-300 hover:scale-105 group"
           aria-label="Call Sai Sales Helpline"
         >
           <span className="relative flex h-3 w-3">
@@ -39,86 +39,86 @@ function App() {
         </a>
       </div>
 
-      {/* Footer with Deep Ambient Shadows & Location Cards */}
-      <footer className="bg-slate-950 text-slate-200 pt-20 pb-10 border-t border-slate-800/80">
+      {/* Footer with Location Cards */}
+      <footer className="bg-slate-100 text-slate-700 pt-20 pb-10 border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-6">
           
           <div className="mb-14">
             <div className="text-center md:text-left mb-8">
-              <span className="text-blue-400 text-xs font-black uppercase tracking-widest block mb-1">
+              <span className="text-blue-600 text-xs font-black uppercase tracking-widest block mb-1">
                 District Network
               </span>
-              <h3 className="text-2xl font-bold text-white">Our 4 Showroom Locations</h3>
+              <h3 className="text-2xl font-bold text-slate-900">Our 4 Showroom Locations</h3>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
               
               {/* Sangli HQ */}
-              <div className="bg-slate-900/90 p-6 rounded-2xl border border-blue-500/40 ring-1 ring-blue-500/20 shadow-xl shadow-blue-950/30 flex flex-col relative hover:-translate-y-1 transition-all duration-300">
+              <div className="bg-white p-6 rounded-2xl border-2 border-blue-500/40 ring-4 ring-blue-50 shadow-lg shadow-blue-900/5 flex flex-col relative hover:-translate-y-1 transition-all duration-300">
                 <div className="absolute top-3 right-3">
-                  <span className="bg-blue-500/20 text-blue-300 text-[10px] uppercase tracking-wider font-extrabold px-2.5 py-0.5 rounded-full border border-blue-400/30">
+                  <span className="bg-blue-50 text-blue-700 text-[10px] uppercase tracking-wider font-extrabold px-2.5 py-0.5 rounded-full border border-blue-200">
                     Head Office
                   </span>
                 </div>
-                <h4 className="text-base font-bold text-white mb-2 flex items-center gap-2">
-                  <span className="text-blue-400 text-lg">🏢</span> Sangli Showroom
+                <h4 className="text-base font-bold text-slate-900 mb-2 flex items-center gap-2">
+                  <span className="text-blue-600 text-lg">🏢</span> Sangli Showroom
                 </h4>
-                <p className="text-slate-400 text-xs leading-relaxed flex-grow">
+                <p className="text-slate-600 text-xs leading-relaxed flex-grow">
                   Below Rajratna Lodging, Kesari Galli, Behind Hotel Vihar, Station Chowk, Sangli 416416.<br/>
-                  <span className="text-slate-200 font-semibold mt-2 inline-block">📞 <a href="tel:8370818181" className="hover:text-blue-400 transition-colors">8370818181</a></span>
+                  <span className="text-slate-800 font-semibold mt-2 inline-block">📞 <a href="tel:8370818181" className="hover:text-blue-600 transition-colors">8370818181</a></span>
                 </p>
-                <a href="https://maps.google.com/?q=Sai+Sales+Below+Rajratna+Lodging+Kesari+Galli+Behind+Hotel+Vihar+Station+Chowk+Sangli+416416" target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex items-center justify-center gap-2 bg-blue-500/10 hover:bg-blue-500/25 text-blue-400 text-xs font-semibold py-2.5 px-4 rounded-xl transition-all duration-300 border border-blue-500/20 shadow-sm">
+                <a href="https://maps.google.com/?q=Sai+Sales+Below+Rajratna+Lodging+Kesari+Galli+Behind+Hotel+Vihar+Station+Chowk+Sangli+416416" target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex items-center justify-center gap-2 bg-blue-50 hover:bg-blue-100 text-blue-700 text-xs font-semibold py-2.5 px-4 rounded-xl transition-all duration-300 border border-blue-200 shadow-xs">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                   View on Google Maps
                 </a>
               </div>
 
               {/* Tasgaon */}
-              <div className="bg-slate-900/90 p-6 rounded-2xl border border-slate-800 shadow-xl shadow-slate-950/40 flex flex-col hover:-translate-y-1 transition-all duration-300">
-                <h4 className="text-base font-bold text-white mb-2 flex items-center gap-2">
-                  <span className="text-blue-400 text-lg">📍</span> Tasgaon Branch
+              <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-md shadow-slate-900/5 flex flex-col hover:-translate-y-1 hover:border-slate-300 transition-all duration-300">
+                <h4 className="text-base font-bold text-slate-900 mb-2 flex items-center gap-2">
+                  <span className="text-blue-600 text-lg">📍</span> Tasgaon Branch
                 </h4>
-                <p className="text-slate-400 text-xs leading-relaxed flex-grow">
+                <p className="text-slate-600 text-xs leading-relaxed flex-grow">
                   Sai Sales,<br/>
                   Main Road, Tasgaon,<br/>
                   Sangli District, Maharashtra.<br/>
-                  <span className="text-slate-200 font-semibold mt-2 inline-block">📞 <a href="tel:8370818181" className="hover:text-blue-400 transition-colors">8370818181</a></span>
+                  <span className="text-slate-800 font-semibold mt-2 inline-block">📞 <a href="tel:8370818181" className="hover:text-blue-600 transition-colors">8370818181</a></span>
                 </p>
-                <a href="https://maps.app.goo.gl/1bv4LVZh4N4QwccT6?g_st=ac" target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold py-2.5 px-4 rounded-xl transition-all duration-300 border border-slate-700 shadow-sm">
+                <a href="https://maps.app.goo.gl/1bv4LVZh4N4QwccT6?g_st=ac" target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex items-center justify-center gap-2 bg-slate-50 hover:bg-slate-100 text-slate-700 text-xs font-semibold py-2.5 px-4 rounded-xl transition-all duration-300 border border-slate-200 shadow-xs">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                   View on Google Maps
                 </a>
               </div>
 
               {/* Ishwarpur */}
-              <div className="bg-slate-900/90 p-6 rounded-2xl border border-slate-800 shadow-xl shadow-slate-950/40 flex flex-col hover:-translate-y-1 transition-all duration-300">
-                <h4 className="text-base font-bold text-white mb-2 flex items-center gap-2">
-                  <span className="text-blue-400 text-lg">📍</span> Ishwarpur Branch
+              <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-md shadow-slate-900/5 flex flex-col hover:-translate-y-1 hover:border-slate-300 transition-all duration-300">
+                <h4 className="text-base font-bold text-slate-900 mb-2 flex items-center gap-2">
+                  <span className="text-blue-600 text-lg">📍</span> Ishwarpur Branch
                 </h4>
-                <p className="text-slate-400 text-xs leading-relaxed flex-grow">
+                <p className="text-slate-600 text-xs leading-relaxed flex-grow">
                   Sai Sales,<br/>
                   Islampur City (Ishwarpur),<br/>
                   Sangli District, Maharashtra.<br/>
-                  <span className="text-slate-200 font-semibold mt-2 inline-block">📞 <a href="tel:8370818181" className="hover:text-blue-400 transition-colors">8370818181</a></span>
+                  <span className="text-slate-800 font-semibold mt-2 inline-block">📞 <a href="tel:8370818181" className="hover:text-blue-600 transition-colors">8370818181</a></span>
                 </p>
-                <a href="https://maps.app.goo.gl/421gTwVx8ebpapeFA?g_st=ac" target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold py-2.5 px-4 rounded-xl transition-all duration-300 border border-slate-700 shadow-sm">
+                <a href="https://maps.app.goo.gl/421gTwVx8ebpapeFA?g_st=ac" target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex items-center justify-center gap-2 bg-slate-50 hover:bg-slate-100 text-slate-700 text-xs font-semibold py-2.5 px-4 rounded-xl transition-all duration-300 border border-slate-200 shadow-xs">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                   View on Google Maps
                 </a>
               </div>
 
               {/* Jath */}
-              <div className="bg-slate-900/90 p-6 rounded-2xl border border-slate-800 shadow-xl shadow-slate-950/40 flex flex-col hover:-translate-y-1 transition-all duration-300">
-                <h4 className="text-base font-bold text-white mb-2 flex items-center gap-2">
-                  <span className="text-blue-400 text-lg">📍</span> Jath Branch
+              <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-md shadow-slate-900/5 flex flex-col hover:-translate-y-1 hover:border-slate-300 transition-all duration-300">
+                <h4 className="text-base font-bold text-slate-900 mb-2 flex items-center gap-2">
+                  <span className="text-blue-600 text-lg">📍</span> Jath Branch
                 </h4>
-                <p className="text-slate-400 text-xs leading-relaxed flex-grow">
+                <p className="text-slate-600 text-xs leading-relaxed flex-grow">
                   Sai Sales,<br/>
                   Main Market Area, Jath,<br/>
                   Sangli District, Maharashtra.<br/>
-                  <span className="text-slate-200 font-semibold mt-2 inline-block">📞 <a href="tel:8370818181" className="hover:text-blue-400 transition-colors">8370818181</a></span>
+                  <span className="text-slate-800 font-semibold mt-2 inline-block">📞 <a href="tel:8370818181" className="hover:text-blue-600 transition-colors">8370818181</a></span>
                 </p>
-                <a href="https://maps.app.goo.gl/ethZmLNGGF3NDgP4A?g_st=ac" target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold py-2.5 px-4 rounded-xl transition-all duration-300 border border-slate-700 shadow-sm">
+                <a href="https://maps.app.goo.gl/ethZmLNGGF3NDgP4A?g_st=ac" target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex items-center justify-center gap-2 bg-slate-50 hover:bg-slate-100 text-slate-700 text-xs font-semibold py-2.5 px-4 rounded-xl transition-all duration-300 border border-slate-200 shadow-xs">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                   View on Google Maps
                 </a>
@@ -127,9 +127,9 @@ function App() {
             </div>
           </div>
 
-          <div className="border-t border-slate-800/80 pt-8 text-center flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+          <div className="border-t border-slate-200 pt-8 text-center flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
             <p>&copy; 2026 Sai Sales. All rights reserved.</p>
-            <p className="text-slate-600">Electronics • Mobiles • Daikin AC Distribution</p>
+            <p className="text-slate-500">Electronics • Mobiles • Daikin AC Distribution</p>
           </div>
         </div>
       </footer>

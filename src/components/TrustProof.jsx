@@ -359,25 +359,25 @@ export default function TrustProof() {
         </div>
 
         {/* 4-Point Sai Sales Guarantee Banner */}
-        <div className="bg-gradient-to-br from-slate-900 via-slate-950 to-blue-950 rounded-3xl p-8 sm:p-10 text-white shadow-2xl shadow-slate-950/50 border border-slate-800 mb-16">
+        <div className="bg-gradient-to-br from-blue-50/80 via-indigo-50/40 to-white rounded-3xl p-8 sm:p-10 border border-blue-100 shadow-xl shadow-blue-900/5 mb-16">
           <div className="text-center max-w-2xl mx-auto mb-10">
-            <span className="text-cyan-400 text-xs font-black uppercase tracking-widest block mb-1">
+            <span className="text-blue-600 text-xs font-black uppercase tracking-widest block mb-1">
               Customer Assurance Policy
             </span>
-            <h3 className="text-2xl sm:text-3xl font-black text-white">
+            <h3 className="text-2xl sm:text-3xl font-black text-slate-900">
               The Sai Sales Trust Guarantee
             </h3>
-            <p className="text-slate-300 text-xs sm:text-sm mt-2 font-light">
+            <p className="text-slate-600 text-xs sm:text-sm mt-2 font-normal leading-relaxed">
               Built on 17+ years of ethical business, transparency, and consumer first service across Sangli District.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {guarantees.map((g, idx) => (
-              <div key={idx} className="bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-md hover:bg-white/10 transition-colors">
-                <span className="text-2xl mb-3 block">{g.icon}</span>
-                <h4 className="text-sm font-bold text-white mb-1.5">{g.title}</h4>
-                <p className="text-slate-400 text-xs leading-relaxed font-light">{g.desc}</p>
+              <div key={idx} className="bg-white border border-slate-200/90 rounded-2xl p-5 shadow-sm hover:shadow-md hover:border-blue-300 transition-all">
+                <span className="text-2xl p-2 w-fit bg-blue-50 rounded-xl mb-3 block border border-blue-100">{g.icon}</span>
+                <h4 className="text-sm font-bold text-slate-900 mb-1.5">{g.title}</h4>
+                <p className="text-slate-500 text-xs leading-relaxed font-normal">{g.desc}</p>
               </div>
             ))}
           </div>
